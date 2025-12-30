@@ -207,6 +207,7 @@ actual val platformModule: Module =
             ICloudBackupService(
                 cloudBackupManager = get<CloudBackupManager>(),
                 backupManager = get<BackupManager>(),
+                logger = getWith("ICloudBackupService"),
             )
         }
     }
